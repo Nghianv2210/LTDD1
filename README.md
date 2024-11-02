@@ -27,3 +27,23 @@ AppRegistry.registerComponent(appName,
                 }}
                 product = {fakeProducts}
                 />)
+
+import React from 'react';
+import {Text, View} from 'react-native';
+//
+const WelcomeScreens = (props) =>{
+//Destructuring an object
+const {x, y} = props
+const {person} = props
+//const => let => var
+//destrucuring person object
+const {name, age, email} = person
+const {products} = props
+return <View style={{
+
+}}>
+     <Text>Value of x ={x}, Value of y ={y}</Text>
+     <Text>name = {name}, email = {email}, age = {age}</Text>
+    </View>
+}
+export default WelcomeScreens
